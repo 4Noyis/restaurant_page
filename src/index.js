@@ -39,6 +39,7 @@ function loadHomepage(){
     container.appendChild(header)
     container.appendChild(content)
     container.appendChild(footer)
+
 }
 
 loadHomepage()
