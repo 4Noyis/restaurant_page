@@ -12,7 +12,7 @@ function loadHomepage(){
     header.innerHTML=`<div id="logo">Logo</div>
             <div id="links">
                 <div><a href="#">Home</a></div>
-                <div><a href="#">Menu</a></div>
+                <div><button onClick="${loadMenu()}">Menu</button></div>
                 <div><a href="#">Contact</a></div>
                 <div><a href="#">About Us</a></div>
 
@@ -41,5 +41,18 @@ function loadHomepage(){
     container.appendChild(footer)
 
 }
+function loadMenu(){
+    let container= document.getElementById('container')
+    const content = document.createElement('div')
+    content.setAttribute('id', 'content')
+    content.innerHTML=`
+            <div id="about">
+                <h1>Menu</h1>
+                <p>Laksdjfaklsdjflkdjkfajklsd riores dolor modi pariatur enim eveniet nostrum quod error molestiae voluptates praesentium. Iste tempora alias provident.</p>
+            </div>`
 
+
+    container.appendChild(content)
+
+}
 loadHomepage()
