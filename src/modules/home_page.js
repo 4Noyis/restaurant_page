@@ -56,6 +56,8 @@ function createFooter(id){
 }
 
 function loadHomepage(){
+    
+    
     console.log("hello world");
     const container=document.getElementById('container')
 
@@ -68,6 +70,7 @@ function loadHomepage(){
     const footer=createFooter('footer')
     container.appendChild(footer)
 
+    
 }
 
 export default loadHomepage
