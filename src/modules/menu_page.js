@@ -2,7 +2,28 @@ function menuContent(id){
     const menu=document.createElement('div')
     menu.setAttribute('id',id)
     menu.innerHTML=`
-        <h1> Menu</h1>
+        <h1>Menu <hr></hr></h1>
+        <div class="food">
+            <h2>Menu 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet</p>
+            <h2>100$</h2>
+            <br></br>
+            <hr></hr>
+        </div>
+        <div class="food">
+            <h2>Menu 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet</p>
+            <h2>130$</h2>
+            <br></br>
+            <hr></hr>
+        </div>
+        <div class="food">
+            <h2>Menu 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet</p>
+            <h2>150$</h2>
+            <br></br>
+            <hr></hr>
+        </div>
         `
     return menu
 }
@@ -11,7 +32,7 @@ function menuContent(id){
 
 
 function setBtnActive(id){
-    const activeBtn= document.querySelector('.tab.active')
+    const activeBtn= document.querySelector('.active')
     if(activeBtn){
         activeBtn.classList.remove('active')
     }

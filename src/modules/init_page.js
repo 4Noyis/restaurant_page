@@ -23,13 +23,15 @@ function createTabs(){
     return tabs
 }
 
-function createHeader(id,restaurantName){
+function createHeader(id){
     const header= document.createElement('div')
     header.setAttribute('id',id)
    
     const tabs=createTabs()
     header.innerHTML=`
-    <div id="logo">${restaurantName}</div>
+    <div id="logo">Taikos
+    <hr></hr>
+    </div>
     `
     header.appendChild(tabs)
     return header
@@ -39,6 +41,7 @@ function createHeader(id,restaurantName){
 function createContent(id){
     const content=document.createElement('div')
     content.setAttribute('id',id)
+   
    
     return content
 }
@@ -59,7 +62,7 @@ function loadPage(){
     const container=document.getElementById('container')
 
     
-    const header=createHeader('header','Logo')   
+    const header=createHeader('header')   
     container.appendChild(header)
     const content=createContent('content')
     container.appendChild(content)

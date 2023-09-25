@@ -12,7 +12,7 @@ function mainContent(id){
 
 
 function setBtnActive(id){
-    const activeBtn= document.querySelector('.tab.active')
+    const activeBtn= document.querySelector('.active')
     if(activeBtn){
         activeBtn.classList.remove('active')
     }
